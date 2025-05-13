@@ -1,0 +1,33 @@
+This is a  program  which was designed as part of my "30-Day Python Challenge." 
+
+
+1. Factorial():
+- Purpose: To calculate the factorial of a given number using recursion.
+- The function factorial takes an integer n as input.
+- If n is 0 or 1, it returns 1, as the factorial of both 0 and 1 is 1.
+- Otherwise, it recursively calls itself with n - 1, multiplying n by the result of factorial(n - 1). 
+  This continues until it reaches the base case (n is 0 or 1).
+
+2. sort_students_by_gpa():
+- Purpose: To sort a list of student dictionaries by their GPA in descending order.
+- The function sort_students_by_gpa takes a list of dictionaries (students), where each dictionary represents a student with keys like 'name' and 'GPA'.
+- It uses Python's built-in sorted() function to sort the list.
+- The key parameter is a lambda function lambda x: x['GPA'], which extracts the 'GPA' value from each dictionary for sorting.
+- The reverse = True argument sorts the list in descending order.
+
+3. show_intro():
+  - This function displays an introductory message about the day’s topic and activities.
+  
+4. main():
+  - Calls show_intro() to display the introduction.
+  - Demonstrates the recursive factorial function by calculating and displaying the factorial of 1, 3, 5, 9 and 10.
+  - Demonstrates the lambda sorting by creating a list of students with their GPAs, sorting them using sort_students_by_gpa(), and displaying the sorted list.
+
+Starting Point:
+  - The code includes an entry point check (if __name__ == "__main__":) to ensure that main() is called only when the script is executed directly, not when imported as a module.
+  
+
+What I've learnt:
+- Recursive functions: Recursive function is a type of function in python where a function calls itself recursively to solve a smaller part of the problem
+  typically with a base case top stop the recursion.
+- Lambda functions: Lambda function is a type of function in python where it is an anonymous function, It is a one-line function used for short, simple operations.
